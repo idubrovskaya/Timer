@@ -1,0 +1,15 @@
+button {
+  background-color: salmon;
+  width: 100px;
+  border-radius: 10px;
+  font-size: 25px;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px;
+}
+
+p {
+  font-size: 60px;
+  font-weight: bold;
+}

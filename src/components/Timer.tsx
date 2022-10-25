@@ -29,10 +29,16 @@ export const Timer = () => {
   return (
     <>
       <p className={styles.p}>{counter}</p>
-      <button className={styles.button} onClick={toggle}>
+      <button
+        disabled={isActive ? true : false}
+        className={styles.button}
+        onClick={toggle}
+      >
         Start
       </button>
-      <button onClick={toggle}>Stop</button>
+      <button disabled={isActive ? false : true} onClick={toggle}>
+        Stop
+      </button>
       <button onClick={onClickReset}>Reset</button>
     </>
   );
